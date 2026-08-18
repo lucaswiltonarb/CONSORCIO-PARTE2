@@ -1,0 +1,84 @@
+/* Metronic Demo 43 - Dark Theme Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Remove default App centering */
+.App {
+  text-align: left;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151521;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2b2b40;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3b58;
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(114, 57, 234, 0.3);
+  color: #fff;
+}
+
+/* Smooth transitions for interactive elements */
+button, a, input, select {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Select dropdown styling */
+select {
+  background-image: none;
+}
+
+select option {
+  background-color: #1b1b29;
+  color: #cdcdde;
+}
+
+/* Focus styles */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid rgba(114, 57, 234, 0.5);
+  outline-offset: 2px;
+}
+
+/* Table row hover */
+table tbody tr:hover {
+  background-color: rgba(43, 43, 64, 0.3);
+}
+
+/* Progress bar animation */
+.progress-bar-animated {
+  animation: progressBar 1.5s ease-in-out;
+}
+
+@keyframes progressBar {
+  from {
+    width: 0%;
+  }
+}
+
+/* Floating action buttons rounded corners */
+.floating-actions > button:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.floating-actions > button:last-child {
+  border-radius: 0 0 0 8px;
+}
